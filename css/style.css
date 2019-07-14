@@ -13,7 +13,34 @@ a{color:#666;text-decoration:none;}
 .cl{zoom:1}
 .cred { color: #f00;}.cgray { color: #999;}
 .fr { float: right;}
-body {background-color: #f4f4f4;}
+html,body{
+    height:100%
+}
+html, body {
+    height: 100%;
+    -webkit-tap-highlight-color: transparent;
+}
+body, .page {
+    background-color: #EDEDED;
+}
+.page{
+  box-sizing:border-box;
+}
+.page {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    z-index: 1; 
+   
+}
+.page.js_show{
+    opacity: 1;
+}
+
 /* 修改weui颜色 */
 .weui-btn_primary{
     background-color: #0186d1;

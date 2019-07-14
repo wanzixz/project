@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<meta content="yes" name="apple-mobile-web-app-capable" />
+		<meta content="black" name="apple-mobile-web-app-status-bar-style" />
+		<meta content="telephone=no" name="format-detection" />
+		<meta name="HandheldFriendly" content="true" />
+		<link rel="stylesheet" type="text/css" href="css/weui.min.css?=520" />
+		<link rel="stylesheet" type="text/css" href="css/style.css?v=520" />
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/common.js"></script>
+		<title>登录 智羽在线-广东交通违章支付平台</title>
+		<title>
+		</title>
+	</head>
+
+	<body>
+		<form name="aspnetForm" method="post" action="./pwd.aspx" id="aspnetForm">
+			<div>
+				<input type="hidden" name="__VSTATE" id="__VSTATE" value="H4sIAAAAAAAEAPvPyJ/Cz8qla2lgbGhgYmZhwp8ixpQGIpiYwSQjlM0vxiTHHpZZnJmUk5qRkgIAAbomcjgAAAA=" />
+				<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="" />
+			</div>
+			<div>
+				<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAASvVXD1oYELeveMr0vHCmYPsl4mwW/ZreqmhEbIVPenELHFQ88L1290UefrBvSNENfryHksFwVZzkrKn2oAbwXzIastyNVkAJyPZVlqXinLm0UursnfbS1Yvq9iMgks9Es=" />
+			</div>
+
+			<header id="header">
+				<div class="top"><img src="./images/hd.jpg" alt=""></div>
+				<div class="hd">
+					<h1><a href="/index.aspx" style="color:white">首页</a>->登录</h1>
+				</div>
+			</header>
+			<section class="home">
+				<div class="weui-cells weui-cells_form">
+					<div class="weui-cell">
+						<div class="weui-cell__hd"><label class="weui-label">账号名称</label></div>
+						<div class="weui-cell__bd">
+							<input class="weui-input" name="ctl00$ContentPlaceHolder1$TextMobile" type="text" maxlength="11" id="ctl00_ContentPlaceHolder1_TextMobile"
+							 class="ftxt2" placeholder="您注册的手机号码" />
+						</div>
+					</div>
+					<div class="weui-cell weui-cell_vcode">
+						<div class="weui-cell__hd"><label class="weui-label">验证码</label></div>
+						<div class="weui-cell__bd">
+							<input class="weui-input" name="ctl00$ContentPlaceHolder1$TextCode" type="text" maxlength="6" id="ctl00_ContentPlaceHolder1_TextCode"
+							 class="codetxt" placeholder="请确认验证码" />
+						</div>
+						<div class="weui-cell__ft">
+							<!-- <img id="siteCode" src="/CheckCode.aspx" onclick="reloadcode();" title="图片点击刷新验证码" alt="图片点击刷新验证码" /> -->
+							<img class="weui-vcode-img" src="http://m.pcpy.net/CheckCode.aspx" title="图片点击刷新验证码" alt="图片点击刷新验证码" />
+						</div>
+					</div>
+				</div>
+
+				<div class="weui-btn-area">
+					<input type="submit" name="ctl00$ContentPlaceHolder1$BtnSend" value="下一步" onclick="return dataSubmit1();" id="ctl00_ContentPlaceHolder1_BtnSend"
+					 class="weui-btn weui-btn_primary" />
+				</div>
+
+
+			</section>
+
+			<script type="text/javascript">
+				function dataSubmit1() {
+
+					if ($("#ctl00_ContentPlaceHolder1_TextMobile").val().length != 11) {
+						alert("请输入正确的手机号码");
+						return false;
+					}
+
+					if ($("#ctl00_ContentPlaceHolder1_TextCode").val().length != 4) {
+						alert("请输入正确的验证码");
+						return false;
+					}
+				}
+
+				function dataSubmit2() {
+
+					if ($("#ctl00_ContentPlaceHolder1_TextMobile").val().length != 11) {
+						alert("请输入正确的手机号码");
+						return false;
+					}
+
+					if ($("#ctl00_ContentPlaceHolder1_TextMobileCode").val().length != 4) {
+						alert("请输入正确的手机验证码");
+						return false;
+					}
+				}
+			</script>
+			<script language="JavaScript" type="text/javascript">
+				function reloadcode() {
+					var verify = document.getElementById('siteCode');
+					verify.setAttribute('src', '/CheckCode.aspx?' + Math.random());
+				}
+			</script>
+
+
+		</form>
+	</body>
+</html>
