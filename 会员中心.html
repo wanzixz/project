@@ -2,98 +2,160 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-  <meta content="yes" name="apple-mobile-web-app-capable" />
-  <meta content="black" name="apple-mobile-web-app-status-bar-style" />
-  <meta content="telephone=no" name="format-detection" />
-  <meta name="HandheldFriendly" content="true" />
-  <link rel="stylesheet" type="text/css" href="css/weui.min.css?=520" />
-  <link rel="stylesheet" type="text/css" href="css/style.css?v=520" />
-  <script type="text/javascript" src="js/jquery.js"></script>
-  <script type="text/javascript" src="js/common.js"></script>
-  <title>登录 智羽在线-广东交通违章支付平台</title>
-  <title>
-  </title>
-</head>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<meta content="yes" name="apple-mobile-web-app-capable" />
+		<meta content="black" name="apple-mobile-web-app-status-bar-style" />
+		<meta content="telephone=no" name="format-detection" />
+		<meta name="HandheldFriendly" content="true" />
+		<link rel="stylesheet" type="text/css" href="css/weui.min.css?=520" />
+		<link rel="stylesheet" type="text/css" href="iconfont/iconfont.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css?v=520" />
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/common.js"></script>
+		<title>登录 智羽在线-广东交通违章支付平台</title>
+		<title>
+		</title>
+	</head>
 
-<body>
-  <form name="aspnetForm" method="post" action="./default.aspx" id="aspnetForm">
-    <div>
-      <input type="hidden" name="__VSTATE" id="__VSTATE" value="H4sIAAAAAAAEAPvPyJ/Cz8ppZGFqbmhpbmqUAgDL57ioEQAAAA==" />
-      <input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="" />
-    </div>
+	<body>
+		<div id="container" class="container">
+			<div class="page">
+				<form name="aspnetForm" method="post" action="./default.aspx" id="aspnetForm">
+					<div>
+						<input type="hidden" name="__VSTATE" id="__VSTATE" value="H4sIAAAAAAAEAPvPyJ/Cz8ppZGFqbmhpbmqUAgDL57ioEQAAAA==" />
+						<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="" />
+					</div>
 
-    <header id="header">
-      <div class="top"><img src="./images/hd.jpg" alt=""></div>
-      <div class="hd">
-        <h1><a href="/index.aspx" style="color:white">首页</a>->会员中心</h1>
-      </div>
-    </header>
-    <section class="home">
-      <h2 class="title">欢迎您：18688710401 &nbsp;
-        <a href="info.aspx" class="editlink">编辑</a>
-        <a href="loginOut.aspx" class="editlink" onclick='javascript:return confirm("你确定要注销？");'>[注销]</a>
-      </h2>
-      <div class="mebnav">
-        <ul class="ui-nav-justify">
-          <li>
-            <a class="ui-nav-item-it item1" href="order/list.aspx">
-              <i class="icon"></i>
-              <strong>全部订单</strong>
-            </a>
-          </li>
-          <li>
-            <a class="ui-nav-item-it item2" href="order/list.aspx?type=0">
-              <i class="icon"><sup class="sup">1</sup></i>
-              <strong>待付款</strong>
-            </a>
-          </li>
-          <li>
-            <a class="ui-nav-item-it item3" href="order/list.aspx?type=1">
-              <i class="icon"></i>
-              <strong>已完成</strong>
-            </a>
-          </li>
-        </ul>
-      </div>
-      <div class="memb-navlist">
-        <div class="weui-cells">
-          <a class="weui-cell weui-cell_access" href="car/list.aspx">
-            <div class="weui-cell__bd">
-              <span style="vertical-align: middle">我的车辆</span>
-            </div>
-            <div class="weui-cell__ft"></div>
-          </a>
-          <a class="weui-cell weui-cell_access" href="pay/list.aspx">
-            <div class="weui-cell__bd">
-              <span style="vertical-align: middle">财务明细</span>
-            </div>
-            <div class="weui-cell__ft"></div>
-          </a>
-          <a class="weui-cell weui-cell_access" href="pwd.aspx">
-            <div class="weui-cell__bd">
-              <span style="vertical-align: middle">修改密码</span>
-            </div>
-            <div class="weui-cell__ft"></div>
-          </a>
-        </div>
-      </div>
-    </section>
+					<header id="header">
+						<div class="hd">
+							<h1>会员中心</h1>
+						</div>
+					</header>
 
-    <footer id="footer">
-      <ul class="cl">
-        <li class="current"><a href="/index.aspx">违章查询</a></li>
-        <li><a href="/user/order/list.aspx">订单管理</a></li>
-        <li><a href="/user/default.aspx">会员中心</a></li>
-        <li><a href="/contact.aspx">联系我们</a></li>
-      </ul>
-    </footer>
+					<section class="home">
+						<div class="person_hd weui-flex">
+							<div class="weui-flex__item">
+								<div class="weui-flex">
+									<div class="weui-flex__item person_user">
+										<a href="info.aspx" class="editlink">
+											<div class="img_item">
+												<i class="icon iconfont icon-huangguan"></i>
+											</div>
+											<div class="text">欢迎您：18688710401</div>
+										</a>
+									</div>
+									<div class="weui-flex__item person_money">
+										<div class="img_item">
+											<i class="icon iconfont icon-coinpurse_line"></i>
+										</div>
+										<div class="money_num text">
+											余额：200元
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="logout">
+								<a href="loginOut.aspx" class="editlink" onclick='javascript:return confirm("你确定要注销？");'>[注销]</a>
+							</div>
+						</div>
 
+						<div class="member_grids">
+							<h3 class="title">业务办理</h3>
+							<div class="weui-grids">
+								<a href="order/list.aspx" class="weui-grid">
+									<div class="weui-grid__icon">
+										<i class="iconfont icon-weizhang" style="color: red;"></i>
+									</div>
+									<p class="weui-grid__label">违章查询</p>
+								</a>
+								<a href="order/list.aspx?type=0" class="weui-grid">
+									<div class="weui-grid__icon">
+										<i class="iconfont icon-dingdan"></i>
+									</div>
+									<p class="weui-grid__label">违章订单</p>
+								</a>
+								<a href="order/list.aspx?type=1" class="weui-grid">
+									<div class="weui-grid__icon">
+										<i class="iconfont icon-chaxun1" style="color: #ff9204;"></i>
+									</div>
+									<p class="weui-grid__label">查询明细</p>
+								</a>
+								<a href="order/list.aspx" class="weui-grid">
+									<div class="weui-grid__icon">
+										<i class="iconfont icon-chaxun" style="color:royalblue"></i>
+									</div>
+									<p class="weui-grid__label">超证查询</p>
+								</a>
+								<a href="order/list.aspx?type=0" class="weui-grid">
+									<div class="weui-grid__icon">
+										<i class="iconfont icon-icon_dispose" style="color: mediumseagreen"></i>
+									</div>
+									<p class="weui-grid__label">超证查看</p>
+								</a>
+								<a href="order/list.aspx?type=1" class="weui-grid">
+									<div class="weui-grid__icon">
+										
+									</div>
+									<p class="weui-grid__label">&nbsp;</p>
+								</a>
+								<a href="order/list.aspx" class="weui-grid">
+									<div class="weui-grid__icon">
+										<i class="iconfont icon-zaixianchongzhi"></i>
+									</div>
+									<p class="weui-grid__label">在线充值</p>
+								</a>
+								<a href="order/list.aspx?type=0" class="weui-grid">
+									<div class="weui-grid__icon">
+										<i class="iconfont icon-menu-line"></i>
+									</div>
+									<p class="weui-grid__label">待付款</p>
+								</a>
+								<a href="order/list.aspx?type=1" class="weui-grid">
+									<div class="weui-grid__icon">
+										<i class="iconfont icon-caiwubaobiao" style="color:mediumseagreen"></i>
+									</div>
+									<p class="weui-grid__label">财务明细</p>
+								</a>
+							</div>
+							<h3 class="title">个人信息</h3>
+							<div class="weui-grids">
+								<a href="car/list.aspx" class="weui-grid">
+									<div class="weui-grid__icon">
+										<i class="iconfont icon-lianmengcheliang"></i>
+									</div>
+									<p class="weui-grid__label">我的车辆</p>
+								</a>
+								<a href="pwd.aspx" class="weui-grid">
+									<div class="weui-grid__icon">
+										<i class="iconfont icon-jibenxinxi-xiugai"></i>
+									</div>
+									<p class="weui-grid__label">修改密码</p>
+								</a>
+								<a href="pay/list.aspx" class="weui-grid">
+									<div class="weui-grid__icon">
+										<i class="iconfont icon-xiugaimima" style="color:royalblue"></i>
+									</div>
+									<p class="weui-grid__label">修改密码</p>
+								</a>
+							</div>
+						</div>
+					</section>
 
+					<div class="orderFoot"></div>
 
-  </form>
-</body>
+					<footer id="footer">
+						<ul class="cl">
+							<li class="current"><a href="/index.aspx">违章查询</a></li>
+							<li><a href="/user/order/list.aspx">订单管理</a></li>
+							<li><a href="/user/default.aspx">会员中心</a></li>
+							<li><a href="/contact.aspx">联系我们</a></li>
+						</ul>
+					</footer>
+				</form>
+			</div>
+		</div>
+	</body>
 
 </html>

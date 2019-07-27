@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<meta content="yes" name="apple-mobile-web-app-capable" />
+		<meta content="black" name="apple-mobile-web-app-status-bar-style" />
+		<meta content="telephone=no" name="format-detection" />
+		<meta name="HandheldFriendly" content="true" />
+		<link rel="stylesheet" type="text/css" href="css/weui.min.css?=520" />
+		<link rel="stylesheet" type="text/css" href="css/style.css?v=520" />
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/common.js"></script>
+		<title>违章查询 智羽在线-广东交通违章支付平台</title>
+		<title>
+		</title>
+	</head>
+
+	<body>
+		<div id="container" class="container">
+			<div class="page">
+				<header id="header">
+					<div class="hd">
+						<h1>超证查询结果查看</h1>
+					</div>
+				</header>
+				<div class="weui-tab">
+					<div class="weui-navbar">
+						<div class="weui-navbar__item weui-bar__item_on">
+							已完成
+						</div>
+						<div class="weui-navbar__item">
+							查询中
+						</div>
+						<div class="weui-navbar__item">
+							已取消
+						</div>
+					</div>
+					<div class="weui-tab__panel">
+						
+						<div class="weui-panel">
+							<div class="weui-panel__hd ">
+								<div class="cl">
+									车牌号码：粤BXXXXXX
+									<span class="fr" style="color: red;">未超证</span>
+								</div>
+							</div>
+							<div class="weui-panel__bd">
+								<div class="weui-media-box weui-media-box_text">
+									<p class="weui-media-box__desc">备注：XXXX</p>
+									<ul class="weui-media-box__info cl">
+										<li class="weui-media-box__info__meta">完成时间：</li>
+										<li class="fr text_right">2019/3/31 17:40:33</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="weui-panel">
+							<div class="weui-panel__hd ">
+								<div class="cl">
+									车牌号码：粤BXXXXXX
+									<span class="fr" style="color: red;">超证</span>
+								</div>
+							</div>
+							<div class="weui-panel__bd">
+								<div class="weui-media-box weui-media-box_text">
+									<p class="weui-media-box__desc">备注：XXXX</p>
+									<ul class="weui-media-box__info cl">
+										<li class="weui-media-box__info__meta">完成时间：</li>
+										<li class="fr text_right">2019/3/31 17:40:33</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript">
+		$(function() {
+			$('.weui-navbar__item').on('click', function() {
+				$(this).addClass('weui-bar__item_on').siblings('.weui-bar__item_on').removeClass('weui-bar__item_on');
+			});
+		});
+	</script>
+</html>

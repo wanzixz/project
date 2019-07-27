@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<meta content="yes" name="apple-mobile-web-app-capable" />
+		<meta content="black" name="apple-mobile-web-app-status-bar-style" />
+		<meta content="telephone=no" name="format-detection" />
+		<meta name="HandheldFriendly" content="true" />
+		<link rel="stylesheet" type="text/css" href="css/weui.min.css?=520" />
+		<link rel="stylesheet" type="text/css" href="css/style.css?v=520" />
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/common.js"></script>
+		<title>查询套餐购买 智羽在线-广东交通违章支付平台</title>
+		<title>
+		</title>
+	</head>
+
+	<body>
+		<div id="container" class="container">
+			<div class="page">
+				<header id="header">
+					<div class="hd">
+						<h1>查询套餐购买</h1>
+					</div>
+				</header>
+				<section>
+					<div class="weui-cells weui-cells_form">
+						<div class="weui-cell weui-cell_select weui-cell_select-after">
+							<div class="weui-cell__hd"><label class="weui-label">违章套餐：</label></div>
+							<div class="weui-cell__bd">
+								<select class="weui-select" name="select1">
+									<option selected="" value="1">套餐1</option>
+									<option value="2">套餐2</option>
+									<option value="3">套餐3</option>
+								</select>
+							</div>
+						</div>
+						<div class="weui-cell">
+							<div class="weui-cell__hd">
+								<label class="weui-label">套餐信息：</label>
+							</div>
+							<div class="weui-cell__bd">
+								<p>价格：<b class="danger">30</b> 元 查询次数：<b class="danger">100</b> 次</p>
+							</div>
+						</div>
+						
+						<div class="weui-cell">
+							<div class="weui-cell__hd">
+								<label class="weui-label">账号余额：</label>
+							</div>
+							<div class="weui-cell__bd">
+								<p><b class="danger">0</b> 元 </p>
+							</div>
+						</div>
+						
+						<div class="weui-cell">
+							<div class="weui-cell__hd">
+								<label class="weui-label">需在线支付：</label>
+							</div>
+							<div class="weui-cell__bd">
+								<p><b class="danger">30</b> 元 </p>
+							</div>
+						</div>
+					</div>
+
+					<div class="weui-btn-area weui-flex">
+						<input type="submit" name="ctl00$ContentPlaceHolder1$BtnSeach" value="购买" onclick="return dataSubmit();" id="ctl00_ContentPlaceHolder1_BtnSeach"
+						 class="weui-flex__item weui-btn weui-btn_primary" />
+					</div>
+				</section>
+			</div>
+		</div>
+	</body>
+</html>

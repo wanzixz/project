@@ -17,89 +17,87 @@
 	</head>
 
 	<body>
-
-
-		<form name="aspnetForm" method="post" action="./reg.aspx" id="aspnetForm">
-			<div>
-				<input type="hidden" name="__VSTATE" id="__VSTATE" value="H4sIAAAAAAAEAPvPyC/ByCoXH++cn1dSlJ9THJRaWJpZlBqQX1zilJic7Z1aGR8vxsiqnFySY2CgAlKVmlcSkJOYnOqRn5OSWmSo4pyRmpztlF9hyM/KrWtoYGlqZGJiaWKQAgDyQKBzWwAAAA==" />
-				<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="" />
+		<div class="container" id="container">
+			<div class="page">
+				<form name="aspnetForm" method="post" action="./reg.aspx" id="aspnetForm">
+					<div>
+						<input type="hidden" name="__VSTATE" id="__VSTATE" value="H4sIAAAAAAAEAPvPyC/ByCoXH++cn1dSlJ9THJRaWJpZlBqQX1zilJic7Z1aGR8vxsiqnFySY2CgAlKVmlcSkJOYnOqRn5OSWmSo4pyRmpztlF9hyM/KrWtoYGlqZGJiaWKQAgDyQKBzWwAAAA==" />
+						<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="" />
+						<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAAavVXD1oYELeveMr0vHCmYPsl4mwW/ZreqmhEbIVPenEFeYm7YDEdL5OczKR94eGKy4095iaBho3sltQsILGaW1uGeuwDlP5M4cy1el9z/ag+FkD5ABlaexJKqmXhFmcFf/0/r6icMiiOq7fIJmQ8o/ypHk7h1P/ux1vvFVsOrF3Q==" />
+					</div>
+					<div class="primary_bg">
+						<header id="header">
+							<div class="top"><img src="./images/hd.jpg" alt=""></div>
+							<div class="hd">
+								<h1>会员注册</h1>
+							</div>
+						</header>
+						<section class="home">
+							<div class="weui-cells weui-cells_form">
+								<div class="weui-cell">
+									<div class="weui-cell__hd"><label class="weui-label">手机号</label></div>
+									<div class="weui-cell__bd">
+										<input class="weui-input" name="ctl00$ContentPlaceHolder1$TextMobile" type="number" maxlength="11" id="ctl00_ContentPlaceHolder1_TextMobile"
+										 class="ftxt2" placeholder="请输入手机号码" />
+									</div>
+								</div>
+								<div class="weui-cell">
+									<div class="weui-cell__hd"><label class="weui-label">密 码</label></div>
+									<div class="weui-cell__bd">
+										<input class="weui-input" name="ctl00$ContentPlaceHolder1$TextPwd1" type="password" maxlength="16" id="ctl00_ContentPlaceHolder1_TextPwd1"
+										 class="ftxt2" placeholder="请设置 6-16位登录密码" />
+									</div>
+								</div>
+								<div class="weui-cell">
+									<div class="weui-cell__hd"><label class="weui-label">确认密码</label></div>
+									<div class="weui-cell__bd">
+										<input class="weui-input" name="ctl00$ContentPlaceHolder1$TextPwd2" type="password" maxlength="16" id="ctl00_ContentPlaceHolder1_TextPwd2"
+										 class="ftxt2" placeholder="请确认密码" />
+									</div>
+								</div>
+							</div>
+							<label for="weuiAgree" class="weui-agree">
+								<input id="ctl00_ContentPlaceHolder1_CheckBox1" type="checkbox" name="ctl00$ContentPlaceHolder1$CheckBox1"
+								 class="weui-agree__checkbox" />
+								<span class="weui-agree__text">
+									同意智羽在线用户使用协议
+								</span>
+							</label>
+						</section>
+					</div>
+					<div class="weui-btn-area">
+						<input type="submit" name="ctl00$ContentPlaceHolder1$BtnReg" value="注册" onclick="return dataSubmit();" id="ctl00_ContentPlaceHolder1_BtnReg"
+						 class="weui-btn width100 weui-btn_primary" />
+					</div>
+					<div class="reg_box">
+						<span class="fr">已经有账号 <a href="login.aspx" class="cred">立即登录</a></span>
+					</div>
+				</form>
 			</div>
-			<div>
-				<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAAavVXD1oYELeveMr0vHCmYPsl4mwW/ZreqmhEbIVPenEFeYm7YDEdL5OczKR94eGKy4095iaBho3sltQsILGaW1uGeuwDlP5M4cy1el9z/ag+FkD5ABlaexJKqmXhFmcFf/0/r6icMiiOq7fIJmQ8o/ypHk7h1P/ux1vvFVsOrF3Q==" />
-			</div>
-			<header id="header">
-				<div class="top"><img src="./images/hd.jpg" alt=""></div>
-				<div class="hd">
-					<h1><a href="/index.aspx" style="color:white">首页</a>->会员注册</h1>
-				</div>
-			</header>
-			<section class="home">
-				<div class="weui-cells weui-cells_form">
-					<div class="weui-cell">
-						<div class="weui-cell__hd"><label class="weui-label">手机号</label></div>
-						<div class="weui-cell__bd">
-							<input class="weui-input" name="ctl00$ContentPlaceHolder1$TextMobile" type="number" maxlength="11" id="ctl00_ContentPlaceHolder1_TextMobile"
-							 class="ftxt2" placeholder="请输入手机号码" />
-						</div>
-					</div>
-					<div class="weui-cell">
-						<div class="weui-cell__hd"><label class="weui-label">密 码</label></div>
-						<div class="weui-cell__bd">
-							<input class="weui-input" name="ctl00$ContentPlaceHolder1$TextPwd1" type="password" maxlength="16" id="ctl00_ContentPlaceHolder1_TextPwd1"
-							 class="ftxt2" placeholder="请设置 6-16位登录密码" />
-						</div>
-					</div>
-					<div class="weui-cell">
-						<div class="weui-cell__hd"><label class="weui-label">确认密码</label></div>
-						<div class="weui-cell__bd">
-							<input class="weui-input" name="ctl00$ContentPlaceHolder1$TextPwd2" type="password" maxlength="16" id="ctl00_ContentPlaceHolder1_TextPwd2"
-							 class="ftxt2" placeholder="请确认密码" />
-						</div>
-					</div>
-				</div>
-				<label for="weuiAgree" class="weui-agree">
-					<input id="ctl00_ContentPlaceHolder1_CheckBox1" type="checkbox" name="ctl00$ContentPlaceHolder1$CheckBox1" class="weui-agree__checkbox" />
-					<span class="weui-agree__text">
-						同意智羽在线用户使用协议
-					</span>
-				</label>
-				<div class="weui-btn-area">
-					<input type="submit" name="ctl00$ContentPlaceHolder1$BtnReg" value="注册" onclick="return dataSubmit();" id="ctl00_ContentPlaceHolder1_BtnReg"
-					 class="weui-btn weui-btn_primary" />
-				</div>
-				<div class="reg_box">
-					<span class="fr">已经有账号 <a href="login.aspx" class="cred">立即登录</a></span>
-				</div>
-			</section>
-
-			<script type="text/javascript">
-				function dataSubmit() {
-
-					if ($("#ctl00_ContentPlaceHolder1_TextMobile").val().length != 11) {
-						alert("请输入正确的手机号码");
-						return false;
-					}
-
-					if ($("#ctl00_ContentPlaceHolder1_TextPwd1").val().length < 6) {
-						alert("请输入正确的登录密码");
-						return false;
-					}
-
-					if ($("#ctl00_ContentPlaceHolder1_TextPwd2").val().length < 6) {
-						alert("请输入正确的确认密码");
-						return false;
-					}
-
-					if ($("#ctl00_ContentPlaceHolder1_TextPwd1").val() != $("#ctl00_ContentPlaceHolder1_TextPwd2").val()) {
-						alert("登录密码和确认密码不一致");
-						return false;
-					}
-				}
-			</script>
-
-
-
-		</form>
+		</div>
 	</body>
+	<script type="text/javascript">
+		function dataSubmit() {
 
+			if ($("#ctl00_ContentPlaceHolder1_TextMobile").val().length != 11) {
+				alert("请输入正确的手机号码");
+				return false;
+			}
+
+			if ($("#ctl00_ContentPlaceHolder1_TextPwd1").val().length < 6) {
+				alert("请输入正确的登录密码");
+				return false;
+			}
+
+			if ($("#ctl00_ContentPlaceHolder1_TextPwd2").val().length < 6) {
+				alert("请输入正确的确认密码");
+				return false;
+			}
+
+			if ($("#ctl00_ContentPlaceHolder1_TextPwd1").val() != $("#ctl00_ContentPlaceHolder1_TextPwd2").val()) {
+				alert("登录密码和确认密码不一致");
+				return false;
+			}
+		}
+	</script>
 </html>

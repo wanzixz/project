@@ -13,7 +13,7 @@
   <link rel="stylesheet" type="text/css" href="css/style.css?v=520" />
   <script type="text/javascript" src="js/jquery.js"></script>
   <script type="text/javascript" src="js/common.js"></script>
-  <title>登录 智羽在线-广东交通违章支付平台</title>
+  <title>违章查询 智羽在线-广东交通违章支付平台</title>
   <title>
   </title>
 </head>
@@ -31,9 +31,8 @@
     </div>
 
     <header id="header">
-      <div class="top"><img src="./images/hd.jpg" alt=""></div>
       <div class="hd">
-        <h1><a href="/index.aspx" style="color:white">首页</a>->全国省交通违章查询</h1>
+        <h1>违章查询</h1>
       </div>
     </header>
     <section class="home">
@@ -114,6 +113,38 @@
             </select>
           </div>
         </div>
+				
+				<div class="weui-cell">
+				  <div class="weui-cell__hd"><label class="weui-label">车辆属性</label></div>
+				  <div class="weui-cell__bd">
+						<div class="weui-flex weui-cells_checkbox">
+							<div class="weui-flex__item">
+								<label class="weui-cell weui-check__label" for="s11" style="padding: 0;">
+										<div class="weui-cell__hd">
+												<input type="radio" class="weui-check" name="radio" id="s11" checked="checked">
+												<i class="weui-icon-checked"></i>
+										</div>
+										<div class="weui-cell__bd">
+												<p>私人车辆</p>
+										</div>
+								</label>
+								
+							</div>
+							<div class="weui-flex__item">
+								<label class="weui-cell weui-check__label" for="s12" style="padding: 0;">
+										<div class="weui-cell__hd">
+												<input type="radio" class="weui-check" name="radio" id="s12" checked="checked">
+												<i class="weui-icon-checked"></i>
+										</div>
+										<div class="weui-cell__bd">
+												<p>公司车辆</p>
+										</div>
+								</label>
+							</div>
+						</div>
+				    
+				  </div>
+				</div>
 
         <div class="weui-cell">
           <div class="weui-cell__hd"><label class="weui-label">车辆识别码</label></div>
@@ -122,6 +153,16 @@
               class="weui-input" placeholder="车架号后6位" />
           </div>
         </div>
+				
+				
+				<div class="weui-cell">
+				  <div class="weui-cell__hd"><label class="weui-label">发动机号码</label></div>
+				  <div class="weui-cell__bd">
+				    <input name="ctl00$ContentPlaceHolder1$TextEnginNo" type="text" maxlength="6" id="ctl00_ContentPlaceHolder1_TextEnginNo"
+				     class="weui-input ftxt2" placeholder="发动机后6位" />
+				  </div>
+				</div>
+				
 
         <div class="weui-cell weui-cell_vcode">
           <div class="weui-cell__hd"><label class="weui-label">验证码</label></div>
@@ -137,11 +178,8 @@
       </div>
 
       <div class="weui-btn-area weui-flex">
-        <div class="weui-flex__item"></div>
-        <input type="submit" name="ctl00$ContentPlaceHolder1$BtnSeach" value="违章查询" onclick="return dataSubmit();" id="ctl00_ContentPlaceHolder1_BtnSeach"
+        <input type="submit" name="ctl00$ContentPlaceHolder1$BtnSeach" value="立即查询" onclick="return dataSubmit();" id="ctl00_ContentPlaceHolder1_BtnSeach"
           class="weui-flex__item weui-btn weui-btn_primary" />
-        <input type="submit" name="ctl00$ContentPlaceHolder1$BtnAddCar" value="我的车辆" id="ctl00_ContentPlaceHolder1_BtnAddCar"
-          class="weui-flex__item weui-btn weui-btn_primary" style="margin:0 15px;" />
       </div>
     </section>
 

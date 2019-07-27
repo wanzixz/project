@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<meta content="yes" name="apple-mobile-web-app-capable" />
+		<meta content="black" name="apple-mobile-web-app-status-bar-style" />
+		<meta content="telephone=no" name="format-detection" />
+		<meta name="HandheldFriendly" content="true" />
+		<link rel="stylesheet" type="text/css" href="css/weui.min.css?=520" />
+		<link rel="stylesheet" type="text/css" href="css/style.css?v=520" />
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/common.js"></script>
+		<title>查询</title>
+		<title>
+		</title>
+	</head>
+
+	<body>
+		<div id="container" class="container">
+			<div class="page">
+				<form name="aspnetForm" method="post" action="./result.aspx" id="aspnetForm">
+					<div>
+						<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+						<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+						<input type="hidden" name="__VSTATE" id="__VSTATE" value="H4sIAAAAAAAEAPvPyJ/Cz8ppbGppaGxgYW7InyLGlAYimJjBJCNEQIxJjjte0bMkNdc5vzSvhIlJjCUNIiMqzGFoaWBkam5mwvl8ytanayc8n7NHyMjA0FLfXN/QUMHQ3MrA1MrAgPPpzv1Pt897uqNJ9NmcXU/n7Hq5esbLhvlPe6a/WNjjbWSoAhLtWvFi77IX++c+7e99vqzx2dpFzxa0P9+1/1lP+/Mlu57PamExNDYxZTRmNjIwYDRgNjMwgNsNZyDkmC2Atj6bs+rpkpbnE9pY3RJzilNTYB5CONsU4WxBqLMtFQxNrYAONzZEuFr9+cy9T3ZNfLpk+cvGyUBXQ7kLFj5f3f1k15InO7qeLVz6ZG8vZf4whTMI+AMAOopYXbgBAAA=" />
+						<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="" />
+					</div>
+					<script type="text/javascript">
+						//<![CDATA[
+						var theForm = document.forms['aspnetForm'];
+						if (!theForm) {
+							theForm = document.aspnetForm;
+						}
+
+						function __doPostBack(eventTarget, eventArgument) {
+							if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+								theForm.__EVENTTARGET.value = eventTarget;
+								theForm.__EVENTARGUMENT.value = eventArgument;
+								theForm.submit();
+							}
+						}
+						//]]>
+					</script>
+
+					<div>
+						<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAAOvVXD1oYELeveMr0vHCmYPG4n3bo0omzg89pRzfkR8+ja8M55wJOMl2X/iNRKnGRWHgoqJXqnjuY3nEAmKF3iiv34G47y+8shc0cauThwnZA==" />
+					</div>
+
+					<header id="header">
+						<div class="hd">
+							<div class="wz_order_detail_hd weui-flex">
+								<div class="weui-flex__item">
+									<b>粤AF36M3</b>
+									<span style="margin-right:30px;">(共有<strong>2</strong>条违章记录)</span>
+								</div>
+								<input id="Checkbox1" class="wz_order_select" type="checkbox" onclick="selectAll(this)" name="Checkbox2"><span >全选</span></input>
+							</div>
+						</div>
+					</header>
+					<section class="wz_order_list">
+						<div class="detail">
+
+							<div class="detailcon">
+								<ul class="dlist haselect">
+									<li id="tr_19025764">
+										<p style="color:silver;font-size:0.9em; padding-top:5px  ">违章类型： 电子眼</p>
+										<p>违章时间：2019/7/11 17:05:00</p>
+										<p>违章城市：广州市</p>
+										<p>违章地址：机场高速北行K21</p>
+										<p style="color:silver;font-size:0.8em;">违章行为： 机动车违反禁止标线指示的- 1345</p>
+										<p style="background-color: #B4DBF2; padding: 3px">
+											扣分:<span class="cred">3</span>
+											罚金:<span class="cred">200</span>
+											滞纳金:<span class="cred">0</span>
+											代办费:<span class="cred">600</span> 元
+											<label class="selectinput">
+												<input type="checkbox" name="order_id" value="19025764" recordid="19025764" fee='200' lastfee='0'
+												 servicefee='600' totalfee='800' statustext='未处理' isout="False" />
+											</label>
+										</p>
+									</li>
+
+									<li id="tr_19025765">
+										<p style="color:silver;font-size:0.9em; padding-top:5px  ">违章类型： 电子眼</p>
+										<p>违章时间：2019/7/9 15:17:31</p>
+										<p>违章城市：广州市</p>
+										<p>违章地址：白云大道北白云堡立交上桥位</p>
+										<p style="color:silver;font-size:0.8em;">违章行为： 机动车违反禁止标线指示的- 1345</p>
+										<p style="background-color: #B4DBF2; padding: 3px">
+											扣分:<span class="cred">3</span>
+											罚金:<span class="cred">200</span>
+											滞纳金:<span class="cred">0</span>
+											代办费:<span class="cred">600</span> 元
+											<label class="selectinput">
+												<input type="checkbox" name="order_id" value="19025765" recordid="19025765" fee='200' lastfee='0'
+												 servicefee='600' totalfee='800' statustext='未处理' isout="False" />
+											</label>
+										</p>
+									</li>
+
+								</ul>
+
+
+							</div>
+						</div>
+
+					</section>
+					
+					<div style="height: 120px;"></div>
+					<section class="orderFoot pay_order_foot">
+						<div class="op">
+							<div class="selectall">
+								<label>
+									<input id="Checkbox2" type="checkbox" onclick='selectAll(this)' name="Checkbox2" />
+									全选</label> 罚金:<span class="cred" id="select_fee">0</span>元,滞纳金:<span class="cred" id="select_lastfee">0</span>元,代办费:
+								<span class="cred" id="select_servicefee">0</span>元
+							</div>
+
+
+							<p> 合计金额:<span class="cred" id="select_totalfee" style="font-weight:bold; font-size:14px">0</span> 元(共 <span
+								 class="cred" id="select_count">0</span> 笔)
+								<span class="paylink">
+									<a id="ctl00_ContentPlaceHolder1_LinkButton1" class="buybtn" href="javascript:__doPostBack(&#39;ctl00$ContentPlaceHolder1$LinkButton1&#39;,&#39;&#39;)">提交订单</a>
+								</span>
+							</p>
+						</div>
+					</section>
+					<input type="hidden" name="ctl00$ContentPlaceHolder1$HFCarNumber" id="ctl00_ContentPlaceHolder1_HFCarNumber" value="粤AF36M3" />
+					
+					
+					<footer id="footer">
+						<ul class="cl">
+							<li class="current"><a href="/index.aspx">违章查询</a></li>
+							<li><a href="/user/order/list.aspx">订单管理</a></li>
+							<li><a href="/user/default.aspx">会员中心</a></li>
+							<li><a href="/contact.aspx">联系我们</a></li>
+						</ul>
+					</footer>
+
+
+				</form>
+
+			</div>
+		</div>
+	</body>
+	
+	<script type="text/javascript">
+		function selectAll(checkedId) {
+			var checked = $(checkedId)[0].checked;
+	
+			if (checked == true) {
+				var c = 0;
+				$("#Checkbox2")[0].checked = true;
+				$("#Checkbox1")[0].checked = true;
+	
+				$("[name=order_id]").each(function(e) {
+					if ($(this).attr("statustext") != "处理中" &&
+						$(this).attr("statustext") != "处理完" &&
+						$(this).attr("servicefee") != "0"
+					) {
+						c++;
+						this.checked = true;
+					}
+				});
+	
+				compute_total();
+	
+			} else {
+	
+				$("#Checkbox2")[0].checked = false;
+				$("#Checkbox1")[0].checked = false;
+				// $("[name=order_id]").attr("checked", "");
+				$("input[name=order_id]").each(function(e) {
+					this.checked = false;
+				});
+				compute_total();
+			}
+		}
+	
+		//单选择
+		$("input[name=order_id]").click(function() {
+	
+			var isorder = $(this).attr("isorder");
+			if (isorder == "True" && this.checked == true) {
+				this.checked = confirm("系统查询到此记录已经下单，您是否继续选择?");
+			}
+	
+			//status = '' 
+			if ($(this).attr("statustext") == "处理中" || $(this).attr("statustext") == "处理完") {
+				this.checked = false;
+				alert("处理中或者处理完的订单不能重复下单");
+				return;
+			}
+	
+			compute_total();
+		});
+	
+		function compute_total() {
+			var count = 0;
+			var fee = 0;
+			var lastfee = 0;
+			var servicefee = 0;
+			var totalfee = 0;
+	
+			$("input[name=order_id]").each(function(e) {
+	
+				if ($(this).attr("statustext") != "处理中" && $(this).attr("statustext") != "处理完") {
+					if (this.checked == true) {
+						count += 1;
+						if (parseFloat($(this).attr("servicefee")) != 0) {
+							fee += parseFloat($(this).attr("fee"));
+							lastfee += parseFloat($(this).attr("lastfee"));
+							servicefee += parseFloat($(this).attr("servicefee"));
+							totalfee += parseFloat($(this).attr("totalfee"));
+						}
+					}
+				}
+			});
+	
+			$("#select_count").html(count);
+			$("#select_fee").html(fee);
+			$("#select_lastfee").html(lastfee);
+			$("#select_servicefee").html(servicefee);
+			$("#select_totalfee").html(totalfee);
+		}
+	
+		function dataSubmit() {
+	
+	
+		}
+	</script>
+
+</html>

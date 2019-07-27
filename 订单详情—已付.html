@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<meta content="yes" name="apple-mobile-web-app-capable" />
+		<meta content="black" name="apple-mobile-web-app-status-bar-style" />
+		<meta content="telephone=no" name="format-detection" />
+		<meta name="HandheldFriendly" content="true" />
+		<link rel="stylesheet" type="text/css" href="css/weui.min.css?=520" />
+		<link rel="stylesheet" type="text/css" href="css/style.css?v=520" />
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/common.js"></script>
+		<title>违章订单-广东交通违章查询</title>
+		<title>
+		</title>
+	</head>
+
+	<body>
+		<div id="container" class="container">
+			<div class="page">
+
+
+				<form name="aspnetForm" method="post" action="./list.aspx" id="aspnetForm">
+					<div>
+						<input type="hidden" name="__VSTATE" id="__VSTATE" value="H4sIAAAAAAAEAPvPyJ/Cz8plaGxmbG5maWJsyZ8ixpQGIpiYwSQjlBRjkuOOV/QsSc11zi/NK2FihCpL4xdlFTYzNDMxNDM0MDWAAGMjC2xinM/mrHo2Zf2T3TPYDc0MDPQMDISMDAwt9c31DU0UDA2sTAytTExTAABaAz2TAAAA" />
+						<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="" />
+					</div>
+					<header id="header">
+						<div class="hd">
+							<h1>违章订单</h1>
+						</div>
+					</header>
+					<section class="home">
+						<div class="weui-form-preview">
+							<div class="weui-form-preview__hd" style="padding: 0 15px;">
+								<div class="weui-form-preview__item">
+									<label class="weui-form-preview__label"><i class="weui-icon-success"></i>支付成功</label>
+								</div>
+							</div>
+							<div class="weui-form-preview__bd">
+								<div class="weui-form-preview__item">
+									<label class="weui-form-preview__label">车牌号码：粤ABCD123</label>
+								</div>
+								<div class="weui-form-preview__item">
+									<label class="weui-form-preview__label">车辆类型：小型汽车</label>
+								</div>
+								<div class="weui-form-preview__item">
+									<label class="weui-form-preview__label">订单编号： 20180412004106475</label>
+								</div>
+								<div class="weui-form-preview__item">
+									<label class="weui-form-preview__label">订单总额：2.00元</label>
+								</div>
+								<div class="weui-form-preview__item">
+									<label class="weui-form-preview__label">罚款本金：2.00元</label>
+								</div>
+								<div class="weui-form-preview__item">
+									<label class="weui-form-preview__label">代办费用：0.00元</label>
+								</div>
+								<div class="weui-form-preview__item">
+									<label class="weui-form-preview__label">总滞纳金：0.00元</label>
+								</div>
+								<div class="weui-form-preview__item">
+									<label class="weui-form-preview__label">下单时间：2018/4/12 0:41:06</label>
+								</div
+								<div class="weui-form-preview__item">
+									<label class="weui-form-preview__label">违章时间</label>
+									<span class="weui-form-preview__value">2018/4/12 0:41:06</span>
+								</div>
+							</div>
+							<ul class="dlist wz_order_detail">
+								<li id="tr_19025764">
+									<div class="weui-flex" style="background-color: #B4DBF2; padding: 4px;">
+										<div class="weui-flex__item">
+											<label class="selectinput" style="margin-top:6px;">
+												<input type="checkbox" name="order_id" value="19025764" recordid="19025764" fee='200' lastfee='0'
+												 servicefee='600' totalfee='800' statustext='未处理' isout="False" />
+											</label>
+											<span style="margin-right: 4px;">违章时间: 2018-4-12 0:41:06</span>
+										</div>
+										<div>
+											<span class="success">可办理</span>
+										</div>
+									</div>
+									<p style="color:silver;font-size:0.9em; padding-top:5px  ">违章类型： 电子眼</p>
+									<p>违章时间：2019/7/11 17:05:00</p>
+									<p>违章城市：广州市</p>
+									<p>违章地址：机场高速北行K21</p>
+									<p style="color:silver;font-size:0.8em;">违章行为： 机动车违反禁止标线指示的- 1345</p>
+									<p style="background-color: #B4DBF2; padding: 3px">
+										扣分:<span class="cred">3</span>
+										罚金:<span class="cred">200</span>
+										滞纳金:<span class="cred">0</span>
+										代办费:<span class="cred">600</span> 元
+									</p>
+								</li>
+							</ul>
+						</div>
+					</section>
+
+					<!-- 底部 -->
+					<div class="orderFoot"></div>
+					<footer id="footer">
+						<ul class="cl">
+							<li class="current"><a href="/index.aspx">违章查询</a></li>
+							<li><a href="/user/order/list.aspx">订单管理</a></li>
+							<li><a href="/user/default.aspx">会员中心</a></li>
+							<li><a href="/contact.aspx">联系我们</a></li>
+						</ul>
+					</footer>
+				</form>
+			</div>
+		</div>
+	</body>
+
+</html>
